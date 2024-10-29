@@ -1,0 +1,26 @@
+.headerContainer {
+    width: 100%;
+    height: calc(100vh - 90vh);
+    background-color: #0064D2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerTitle {
+    color: #fff;
+}
+
+.headerNavLinks {
+    display: flex;
+    gap: 1em;
+}
+
+.headerLinks {
+    list-style-type: none;
+}
+
+.headerAnchor{
+    color: #fff;
+    text-decoration: none;
+}
