@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <Routes>
         <Route path='/' Component={Home} />
-        <Route path='flight-view' Component={FlightView} />
+        <Route path='/flight-view' Component={FlightView} />
         <Route path='*' Component={NotFound} />
       </Routes>
     </div>
