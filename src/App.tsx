@@ -8,8 +8,8 @@ function App() {
   return (
     <div className='App'>
       <Routes>
-        <Route path='/FlightWatch/' Component={Home} />
-        <Route path='/FlightWatch/flight-view' Component={FlightView} />
+        <Route path='/' Component={Home} />
+        <Route path='flight-view' Component={FlightView} />
         <Route path='*' Component={NotFound} />
       </Routes>
     </div>

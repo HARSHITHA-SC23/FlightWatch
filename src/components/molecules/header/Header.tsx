@@ -11,7 +11,6 @@ type HeaderProps = {
   links: Link[];
 };
 function Header({ title, links }: HeaderProps) {
-  console.log(`${window.location.origin}/FlightWatch${links[0].url}`)
   return (
     <div className='headerContainer'>
       <Typography className='headerTitle' variant="h4">{title}</Typography>
@@ -19,7 +18,7 @@ function Header({ title, links }: HeaderProps) {
         <ul  className='headerNavLinks'>
           {links.map((link) => (
             <li className='headerLinks'>
-              <a className='headerAnchor' href={`${window.location.origin}/FlightWatch${link.url}`}>{link.name}</a>
+              <a className='headerAnchor' href={link.url}>{link.name}</a>
             </li>
           ))}
         </ul>
