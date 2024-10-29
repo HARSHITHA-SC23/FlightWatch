@@ -6,8 +6,8 @@ import Header from './Header';
 describe('Header Component', () => {
     const title = 'Header'
     const links = [
-        { name: 'Home', url: '/' },
-        { name: 'Flight View', url: '/flight-view' }
+        { name: 'Home', url: '/FlightWatch/' },
+        { name: 'Flight View', url: '/FlightWatch/flight-view' }
       ];
 
     test('renders header title', () => {

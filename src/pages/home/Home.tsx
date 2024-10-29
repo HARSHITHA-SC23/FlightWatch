@@ -35,7 +35,7 @@ function Home() {
       );
       const data = await response.json();
       setFlightView(data);
-      navigate('/flight-view');
+      navigate('/FlightWatch/flight-view');
     } catch (error) {
       if (error instanceof Error) {
         setError(error.message);

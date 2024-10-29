@@ -1,6 +1,6 @@
 export const HEADER_LINKS = [
-    { name: 'Home', url: '/' },
-    // { name: 'Flight View', url: '/flight-view' },
+    { name: 'Home', url: '/FlightWatch/' },
+    // { name: 'Flight View', url: '/FlightWatch/flight-view' },
 ];
 
 export const TABLE_HEADERS = [
