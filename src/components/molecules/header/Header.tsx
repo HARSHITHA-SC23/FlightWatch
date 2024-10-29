@@ -1,14 +1,15 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
 import Typography from '@mui/material/Typography'
 
-type Link = {
+type HeaderLink = {
   name: string;
   url: string;
 };
 
 type HeaderProps = {
   title: string;
-  links: Link[];
+  links: HeaderLink[];
 };
 function Header({ title, links }: HeaderProps) {
   return (
@@ -18,7 +19,7 @@ function Header({ title, links }: HeaderProps) {
         <ul  className='headerNavLinks'>
           {links.map((link) => (
             <li className='headerLinks'>
-              <a className='headerAnchor' href={link.url}>{link.name}</a>
+              <Link className='headerAnchor' to={link.url}>{link.name}</Link>
             </li>
           ))}
         </ul>
