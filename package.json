@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://HARSHITHA-SC23.github.io",
+  "homepage": "https://HARSHITHA-SC23.github.io/FlightWatch",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
