@@ -18,7 +18,7 @@ function Header({ title, links }: HeaderProps) {
         <ul  className='headerNavLinks'>
           {links.map((link) => (
             <li className='headerLinks'>
-              <a className='headerAnchor' href={link.url}>{link.name}</a>
+              <a className='headerAnchor' href={`${window.location.origin}${link.url}`}>{link.name}</a>
             </li>
           ))}
         </ul>

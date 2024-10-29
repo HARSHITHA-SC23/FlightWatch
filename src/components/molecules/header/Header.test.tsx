@@ -30,7 +30,7 @@ describe('Header Component', () => {
         links.forEach((link) => {
             const linkElement = screen.getByText(link.name)
             expect(linkElement).toBeInTheDocument()
-            expect(linkElement).toHaveAttribute('href', link.url)
+            expect(linkElement).toHaveAttribute('href', `${window.location.origin}${link.url}`)
             expect(linkElement).toHaveClass('headerAnchor')
         })
     })
